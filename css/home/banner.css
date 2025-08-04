@@ -1,0 +1,114 @@
+.banner{
+    background: url(../../img/banner_bg1.png) center center / 6000px;
+}
+
+.banner .area{
+    position: relative;
+    height: 285px;
+    background-color: #0c0;
+}
+
+/*左侧的内容*/
+
+.banner .area .area-left{
+    position: relative;
+    width: 730px;
+}
+
+/*图片列表*/
+.banner .area-left .img-list{
+    display: flex;
+    overflow: hidden;
+}
+.banner .area-left .img-list li{
+    flex-shrink: 0;
+    width: 100%;
+}
+.banner .area-left .img-list .item{
+    display: block;
+}
+.banner .area-left .img-list .item img{
+    width: 100%;
+    height: 285px;
+}
+
+/*点的列表*/
+.banner .area-left .dots-list{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.banner .area-left .dots-list li{
+    margin: 0 2px;
+}
+
+.banner .area-left .dots-list .item{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../../img/banner.png) 3px -343px;
+}
+
+.banner .area-left .dots-list .active,
+.banner .area-left .dots-list .item:hover{
+    background-position:-16px -343px;
+}
+
+/*左侧的内容*/
+
+/*右侧的内容*/
+.banner .area-right{
+    position: absolute;
+    right: -1px;
+    top: 0;
+    bottom: 0;
+    width: 254px;
+    background: url(../../img/download.png);
+}
+.banner .area-right .download{
+    display: block;
+    width: 215px;
+    height: 56px;
+    margin: 186px 0 0 19px;
+    text-indent: -9999px;
+}
+.banner .area-right .download:hover{
+    background: url(../../img/download.png) 0 -290px;
+}
+.banner .area-right .desc{
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #8d8d8d;
+}
+/*右侧的内容*/
+
+/*两个控制的按钮*/
+.banner .area .control{
+    width: 37px;
+    height: 63px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: url(../../img/banner.png);
+}
+.banner .area .left{
+    left: -70px;
+    background-position: 0 -360px;
+}
+.banner .area .left:hover{
+    background-position: 0 -430px;
+}
+.banner .area .right{
+    right: -70px;
+    background-position: 0 -508px;
+}
+.banner .area .right:hover{
+    background-position: 0 -578px;
+}
